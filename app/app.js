@@ -58,7 +58,11 @@ var getKeyInput = function() {
 }
 
 var getValueInput = function() {
-  return $('.value').val();
+  if (typeof 'value' === 'number') {
+    return $('.value').val();
+  } else {
+    alert('Invalid input! IMDB Score must be a number.')
+  }
 }
 
 var resetInputs = function() {
