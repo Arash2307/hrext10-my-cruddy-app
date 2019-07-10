@@ -117,7 +117,7 @@ label {
   to {opacity: 1}
 }
 
-/*header style*/
+/*header*/
 
 /*
 =====================================================================
@@ -154,7 +154,7 @@ header {
    height: 105px;
    min-height: 10px;
    width: 100%;
-   background: #161415 url(../images/header-background.jpg) no-repeat top center;
+   /*background: #161415 url(../images/header-background.jpg) no-repeat top center;*/
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
