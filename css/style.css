@@ -14,6 +14,45 @@ body, html {
   height: 100%;
 }
 
+audio:hover, audio:focus, audio:active
+{
+-webkit-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+-moz-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+-webkit-transform: scale(1.05);
+-moz-transform: scale(1.05);
+transform: scale(1.05);
+}
+
+audio {
+    filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+    width: 200px;
+    height: 25px;
+    background-color: #b3b3b3 !important;
+    background-image: linear-gradient(#eaeaea, #eaeaea) !important;
+    background: -webkit-linear-gradient(#b3b3b3, #eaeaea) !important;
+    border: 0px solid #b3b3b3 !important;
+    border-radius: 0px 0px 0px 0px;
+    color: #6B6B6B;
+    color: red;
+font-style: italic;
+
+}
+
+audio
+{
+-webkit-transition:all 0.5s linear;
+-moz-transition:all 0.5s linear;
+-o-transition:all 0.5s linear;
+transition:all 0.5s linear;
+-moz-box-shadow: 2px 2px 4px 0px #006773;
+-webkit-box-shadow:  2px 2px 4px 0px #006773;
+box-shadow: 2px 2px 4px 0px #006773;
+-moz-border-radius:7px 7px 7px 7px ;
+-webkit-border-radius:7px 7px 7px 7px ;
+border-radius:7px 7px 7px 7px ;
+}
+
 th {
   text-decoration: underline;
 }

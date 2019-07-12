@@ -54,8 +54,8 @@ background-image: url("bg.jpg");
 <body class="m-3">
 
 <!-- My favorite movies list...! -->
-
-
+<audio src="sound.mp3" loop="true" autoplay="true" controls="false">
+</audio>
 
 <!-- Start of slideshow container -->
 <div class="slideshow-container">
@@ -157,9 +157,21 @@ background-image: url("bg.jpg");
       </div>
       <div class="input-group col-sm-5">
         <div class="input-group-prepend">
+          <label class="input-group-text">Stars</label>
+        </div>
+        <input class="stars-input form-control" type="text" placeholder="stars...">
+      </div>
+      <div class="input-group col-sm-5">
+        <div class="input-group-prepend">
+          <label class="input-group-text">Director</label>
+        </div>
+        <input class="director-input form-control" type="text" placeholder="director...">
+      </div>
+      <div class="input-group col-sm-5">
+        <div class="input-group-prepend">
           <label class="input-group-text">IMDB Score</label>
         </div>
-        <input class="value form-control" type="text" placeholder="score...">
+        <input class="score-input form-control" type="text" placeholder="score...">
       </div>
       <button class="reset btn btn-danger btn-sm col-sm-2">Reset Input</button>
     </div>
@@ -174,6 +186,8 @@ background-image: url("bg.jpg");
         <thead>
           <tr>
             <th scope="col">Movies</th>
+            <th scope="col">Stars</th>
+            <th scope="col">Director</th>
             <th scope="col">IMDB Score</th>
           </tr>
         </thead>

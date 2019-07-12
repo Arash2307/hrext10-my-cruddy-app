@@ -45,7 +45,9 @@ var showDatabaseContents = function() {
 
   for (var i = 0; i < window.localStorage.length; i++) {
     var key = window.localStorage.key(i);
-    $('tbody').append(`<tr><td>${key}</td><td>${window.localStorage.getItem(key)}</td></tr>`)
+    var dataObj = JSON.parse(window.localStorage.getItem(key))
+    console.log(dataObj)
+    $('tbody').append(`<tr><td>${key}</td><td>${dataObj.stars}</td><td>${dataObj.director}</td><td>${dataObj.score}</td>`)
   }
 }
 
@@ -58,12 +60,21 @@ var getKeyInput = function() {
 }
 
 var getValueInput = function() {
-  return $('.value').val();
+  // return $('.value').val();
+  var stars = $('.stars-input').val();
+  var director = $('.director-input').val();
+  var score = parseInt($('.score-input').val());
+
+  var data = {stars: stars, director: director, score: score}
+
+  return JSON.stringify(data);
 }
 
 var resetInputs = function() {
   $('.key').val('');
-  $('.value').val('');
+  $('.stars-input').val('')
+  $('.director-input').val('');
+  $('.score-input').val('')
 }
 
 $(document).ready(function() {
