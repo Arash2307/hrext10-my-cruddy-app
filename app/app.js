@@ -63,7 +63,7 @@ var getValueInput = function() {
   // return $('.value').val();
   var stars = $('.stars-input').val();
   var director = $('.director-input').val();
-  var score = parseInt($('.score-input').val());
+  var score = $('.score-input').val();
 
   var data = {stars: stars, director: director, score: score}
 
